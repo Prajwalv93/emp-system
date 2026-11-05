@@ -39,7 +39,7 @@ def ids(cols):
     return ",".join("`" + c + "`" for c in cols)
 
 PAGE = """
-<h2>Employee Management System</h2>
+<h2>Employee Management System by prajwal</h2>
 <form method="post" action="/add">
 {% for c in cols %}<input name="{{c}}" placeholder="{{c}}" {{ 'required' if loop.first }}> {% endfor %}
 <button>Add / Update</button>
